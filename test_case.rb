@@ -1,4 +1,4 @@
-# Test case Step-1
+# Test case Step-1,2
 
 def test_add
 
@@ -12,7 +12,7 @@ def test_add
 end
 
 
-# Test case Step-1
+# Test case Step-3
 
 def test_add
 
