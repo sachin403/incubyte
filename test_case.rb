@@ -37,3 +37,29 @@ end
         puts "all test cases pass for step-4" 
 
 end
+
+
+# Test case Step-5
+
+ def test_add
+
+        raise "Fail: Expected 0" unless add("") == 0
+        begin
+            add("1,-2,3")
+            rescue => e
+               raise "Fail: Wrong message" unless e.message == "negative numbers not allowed -2"
+            else
+               raise "Fail: Exception not raised for negative number"
+        end
+
+        begin
+            add("2,-3,4,-5")
+            rescue => e
+                raise "Fail: Wrong message" unless e.message == "negative numbers not allowed -3, -5"
+            else
+                raise "Fail: Exception not raised for multiple negatives"
+        end
+
+        puts "all test cases pass for step-5" 
+
+end
